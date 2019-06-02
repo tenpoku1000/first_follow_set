@@ -1,0 +1,288 @@
+
+
+=== calc_empty ===
+
+=== calc_empty_loop ===
+
+=== calc_first_set ===
+
+=== calc_first_set_loop ===
+
+=== calc_first_set_loop ===
+TP_PARSE_TREE_GRAMMER_PROGRAM:
+int
+variable
+
+TP_PARSE_TREE_GRAMMER_PROGRAM_TMP1:
+int
+variable
+EMPTY
+
+TP_PARSE_TREE_GRAMMER_STATEMENT:
+int
+variable
+
+TP_PARSE_TREE_GRAMMER_STATEMENT_TMP1:
+EMPTY
+int
+
+TP_PARSE_TREE_GRAMMER_TYPE:
+int
+
+TP_PARSE_TREE_GRAMMER_EXPRESSION:
+(
++
+-
+variable
+constant
+
+TP_PARSE_TREE_GRAMMER_EXPRESSION_TMP1:
++
+-
+EMPTY
+
+TP_PARSE_TREE_GRAMMER_EXPRESSION_TMP2:
++
+-
+
+TP_PARSE_TREE_GRAMMER_TERM:
+(
++
+-
+variable
+constant
+
+TP_PARSE_TREE_GRAMMER_TERM_TMP1:
+*
+/
+EMPTY
+
+TP_PARSE_TREE_GRAMMER_TERM_TMP2:
+*
+/
+
+TP_PARSE_TREE_GRAMMER_FACTOR:
+(
++
+-
+variable
+constant
+
+TP_PARSE_TREE_GRAMMER_FACTOR_TMP1:
+EMPTY
++
+-
+
+TP_PARSE_TREE_GRAMMER_FACTOR_TMP2:
+variable
+constant
+
+
+=== calc_follow_set ===
+
+=== calc_follow_set_loop ===
+
+=== calc_follow_set_loop ===
+TP_PARSE_TREE_GRAMMER_PROGRAM:
+EOF
+
+TP_PARSE_TREE_GRAMMER_PROGRAM_TMP1:
+EOF
+
+TP_PARSE_TREE_GRAMMER_STATEMENT:
+int
+variable
+EOF
+
+TP_PARSE_TREE_GRAMMER_STATEMENT_TMP1:
+variable
+
+TP_PARSE_TREE_GRAMMER_TYPE:
+variable
+
+TP_PARSE_TREE_GRAMMER_EXPRESSION:
+;
+)
+
+TP_PARSE_TREE_GRAMMER_EXPRESSION_TMP1:
+;
+)
+
+TP_PARSE_TREE_GRAMMER_EXPRESSION_TMP2:
+(
++
+-
+variable
+constant
+
+TP_PARSE_TREE_GRAMMER_TERM:
++
+-
+;
+)
+
+TP_PARSE_TREE_GRAMMER_TERM_TMP1:
++
+-
+;
+)
+
+TP_PARSE_TREE_GRAMMER_TERM_TMP2:
+(
++
+-
+variable
+constant
+
+TP_PARSE_TREE_GRAMMER_FACTOR:
+*
+/
++
+-
+;
+)
+
+TP_PARSE_TREE_GRAMMER_FACTOR_TMP1:
+variable
+constant
+
+TP_PARSE_TREE_GRAMMER_FACTOR_TMP2:
+*
+/
++
+-
+;
+)
+
+
+=== calc_empty ===
+
+=== calc_empty_loop ===
+
+=== calc_first_set ===
+
+=== calc_first_set_loop ===
+
+=== calc_first_set_loop ===
+TP_PARSE_TREE_GRAMMER_E:
+(
+i
+num
+
+TP_PARSE_TREE_GRAMMER_E_TMP:
++
+-
+EMPTY
+
+TP_PARSE_TREE_GRAMMER_T:
+(
+i
+num
+
+TP_PARSE_TREE_GRAMMER_T_TMP:
+*
+/
+EMPTY
+
+TP_PARSE_TREE_GRAMMER_F:
+(
+i
+num
+
+
+=== calc_follow_set ===
+
+=== calc_follow_set_loop ===
+
+=== calc_follow_set_loop ===
+TP_PARSE_TREE_GRAMMER_E:
+EOF
+)
+
+TP_PARSE_TREE_GRAMMER_E_TMP:
+EOF
+)
+
+TP_PARSE_TREE_GRAMMER_T:
++
+-
+EOF
+)
+
+TP_PARSE_TREE_GRAMMER_T_TMP:
++
+-
+EOF
+)
+
+TP_PARSE_TREE_GRAMMER_F:
+*
+/
++
+-
+EOF
+)
+
+
+=== calc_empty ===
+
+=== calc_empty_loop ===
+
+=== calc_empty_loop ===
+TP_PARSE_TREE_GRAMMER_T:
+
+=== calc_first_set ===
+
+=== calc_first_set_loop ===
+
+=== calc_first_set_loop ===
+TP_PARSE_TREE_GRAMMER_E:
+num
+
+TP_PARSE_TREE_GRAMMER_E_TMP:
+EMPTY
+
+TP_PARSE_TREE_GRAMMER_T:
+EMPTY
+
+
+=== calc_follow_set ===
+
+=== calc_follow_set_loop ===
+
+=== calc_follow_set_loop ===
+TP_PARSE_TREE_GRAMMER_E:
+EOF
+
+TP_PARSE_TREE_GRAMMER_E_TMP:
+num
+
+TP_PARSE_TREE_GRAMMER_T:
+EOF
+num
+
+
+=== begin test: ===
+
+=== begin test grammer_1: ===
+
+=== first set test passed. ===
+
+=== follow set test passed. ===
+
+=== begin test grammer_2: ===
+
+=== first set test passed. ===
+
+=== follow set test passed. ===
+
+=== begin test grammer_3: ===
+
+=== first set test passed. ===
+
+=== follow set test passed. ===
+
+=== all test passed. ===
+
+calc_first_follow success.
+
