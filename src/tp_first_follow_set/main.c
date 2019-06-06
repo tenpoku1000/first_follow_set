@@ -6,7 +6,7 @@
 static TP_SYMBOL_TABLE symbol_table = { .member_is_need_test_first_follow_set = true };
 
 static bool parse_cmd_line_param(TP_SYMBOL_TABLE* symbol_table, int argc, char** argv);
-static calc_first_follow_set_entry_point(TP_SYMBOL_TABLE* symbol_table);
+static bool calc_first_follow_set_entry_point(TP_SYMBOL_TABLE* symbol_table);
 
 int main(int argc, char** argv)
 {
@@ -87,7 +87,7 @@ error_out:
     return false;
 }
 
-static calc_first_follow_set_entry_point(TP_SYMBOL_TABLE* symbol_table)
+static bool calc_first_follow_set_entry_point(TP_SYMBOL_TABLE* symbol_table)
 {
     fprintf(symbol_table->member_write_log_file, "\n");
 

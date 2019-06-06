@@ -8,7 +8,7 @@ static int compare_grammer_term(const void* param1, const void* param2);
 TP_GRAMMER** tp_make_grammer(
     TP_SYMBOL_TABLE* symbol_table, rsize_t* grammer_num_out, TP_GRAMMER** grammer, rsize_t grammer_num)
 {
-    TP_GRAMMER** grammer_buffer = (TP_GRAMMER**)calloc(/*TP_CALLOC(symbol_table, */grammer_num, sizeof(TP_GRAMMER*));
+    TP_GRAMMER** grammer_buffer = (TP_GRAMMER**)calloc(grammer_num, sizeof(TP_GRAMMER*));
 
     if (NULL == grammer_buffer){
 

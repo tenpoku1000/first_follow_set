@@ -188,6 +188,8 @@ bool tp_test_grammer_1(TP_SYMBOL_TABLE* symbol_table, TP_GRAMMER** grammer_tbl, 
 
         if ( ! test_first_set_grammer_1(symbol_table, grammer_tbl[i])){
 
+            fprintf(symbol_table->member_write_log_file, "\n=== first set test failed. ===\n");
+
             return false;
         }
     }
@@ -197,6 +199,8 @@ bool tp_test_grammer_1(TP_SYMBOL_TABLE* symbol_table, TP_GRAMMER** grammer_tbl, 
     for (rsize_t i = 0; TP_PARSE_TREE_GRAMMER_NULL != grammer_tbl[i]->member_grammer; ++i){
 
         if ( ! test_follow_set_grammer_1(symbol_table, grammer_tbl[i])){
+
+            fprintf(symbol_table->member_write_log_file, "\n=== follow set test failed. ===\n");
 
             return false;
         }
