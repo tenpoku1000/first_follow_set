@@ -4,9 +4,6 @@
 #include "tp_first_follow_set.h"
 
 static bool calc_first_follow(TP_SYMBOL_TABLE* symbol_table, TP_GRAMMER** grammer_tbl, rsize_t grammer_num);
-static bool test_first_follow_set(TP_SYMBOL_TABLE* symbol_table, TP_GRAMMER** grammer_tbl, rsize_t grammer_num);
-static bool test_first_set(TP_SYMBOL_TABLE* symbol_table, TP_GRAMMER** grammer_tbl, rsize_t grammer_num);
-static bool test_follow_set(TP_SYMBOL_TABLE* symbol_table, TP_GRAMMER** grammer_tbl, rsize_t grammer_num);
 
 bool tp_calc_first_follow_set(TP_SYMBOL_TABLE* symbol_table)
 {
